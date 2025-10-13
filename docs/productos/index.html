@@ -10,10 +10,24 @@ eleventyExcludeFromCollections: true
   Estos son los productos de la empresa.
 </p>
 
+<h2>Productos</h2>
 <ul>
   {% for producto in collections.productos %}
-  <li>
-    <a href="{{ producto.url }}">{{ producto.data.title }}</a>
-  </li>
+    {% if not producto.data.tags contains "materiales" %}
+      <li>
+        <a href="{{ producto.url }}">{{ producto.data.title }}</a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
+
+<h2>Materiales de oficina</h2>
+
+<ul>
+  {% for material in collections.materiales %}
+    <li>
+      <a href="{{ material.url }}">{{ material.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
