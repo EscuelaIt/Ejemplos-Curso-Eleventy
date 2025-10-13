@@ -1,0 +1,19 @@
+---
+layout: layout.html
+title: Productos
+eleventyExcludeFromCollections: true
+---
+
+<h1>Productos</h1>
+
+<p>
+  Estos son los productos de la empresa.
+</p>
+
+<ul>
+  {% for producto in collections.productos %}
+  <li>
+    <a href="{{ producto.url }}">{{ producto.data.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

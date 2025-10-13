@@ -1,6 +1,7 @@
 ---
 layout: layout.html
 title: Mesa de oficina
+tags: productos
 ---
 
 # Mesa de oficina
