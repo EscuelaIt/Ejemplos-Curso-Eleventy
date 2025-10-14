@@ -1,5 +1,6 @@
 ---
 layout: layout.html
+eleventyExcludeFromCollections: true
 ---
 
 <div class="hero">
@@ -28,5 +29,12 @@ layout: layout.html
 <p>
   Sigue funcionando el live reload....
 </p>
-
+<h2>Novedades del sitio</h2>
+{% assign articulosOrdenados = collections.all | reverse %}
+{% for articulo in articulosOrdenados limit: 4 %}
+  <article class="novedad">
+    <h3><a href="{{ articulo.url }}">{{ articulo.data.title }}</a></h3>
+    <p>{{ articulo.data.description | default: "Sin descripción"}}</p>
+  </article>
+{% endfor %}
 

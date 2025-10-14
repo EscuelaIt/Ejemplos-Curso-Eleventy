@@ -2,6 +2,7 @@
 layout: layout.html
 title: Acerca de Miguel
 author: Miguel Angel Alvarez
+eleventyExcludeFromCollections: true
 ---
 
 # Acerca de
