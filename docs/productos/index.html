@@ -12,10 +12,12 @@ eleventyExcludeFromCollections: true
 
 <h2>Productos</h2>
 <ul>
-  {% for producto in collections.productos %}
+  {% assign productosOrdenados = collections.productos | sort: "data.title" %}
+  {% for producto in productosOrdenados %}
     {% if not producto.data.tags contains "materiales" %}
       <li>
-        <a href="{{ producto.url }}">{{ producto.data.title }}</a>
+        <b><a href="{{ producto.url }}">{{ producto.data.title }}</a></b>
+        <br>{{ producto.data.description }}
       </li>
     {% endif %}
   {% endfor %}
