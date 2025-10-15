@@ -1,3 +1,6 @@
+import './components/foo-component';
+import '@dile/ui/components/menu-overlay/menu-overlay.js';
+
 console.log('Hola EscuelaIT y Vite');
 
 document.addEventListener('DOMContentLoaded', function() {

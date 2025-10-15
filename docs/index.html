@@ -25,7 +25,7 @@ eleventyExcludeFromCollections: true
     Con una gran comunidad
   </div>
 </section>
-
+<foo-component></foo-component>
 <p>
   Sigue funcionando el live reload....
 </p>
@@ -37,4 +37,16 @@ eleventyExcludeFromCollections: true
     <p>{{ articulo.data.description | default: "Sin descripción"}}</p>
   </article>
 {% endfor %}
+
+<dile-menu-overlay verticalAlign="top" moveTop="-4">
+  <span slot="trigger" class="openmenu">Click para abrir</span>
+  <div slot="content">
+    <p>Select one:</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+</dile-menu-overlay>
 

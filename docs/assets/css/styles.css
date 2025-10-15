@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  --dile-menu-overlay-color: yellow;
+  --dile-menu-overlay-background-color: #666;
+  --dile-menu-overlay-padding: 1rem;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -150,4 +155,10 @@ footer {
   border: 1px solid #666;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.openmenu {
+  cursor: pointer;
+  border: 1px solid blue;
+  padding: 0.5rem 1rem;
 }
