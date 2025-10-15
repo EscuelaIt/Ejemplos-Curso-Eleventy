@@ -1,3 +1,5 @@
+console.log('Hola EscuelaIT y Vite');
+
 document.addEventListener('DOMContentLoaded', function() {
   let boton = document.getElementById('miboton');
   boton.addEventListener('click', function() {
