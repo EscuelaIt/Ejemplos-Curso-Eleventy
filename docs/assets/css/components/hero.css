@@ -1,0 +1,9 @@
+.hero {
+  background: orange;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-bottom: 1rem;
+}

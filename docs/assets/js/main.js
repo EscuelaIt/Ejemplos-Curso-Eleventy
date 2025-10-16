@@ -1,3 +1,4 @@
+import '../css/styles.css';
 import './components/foo-component';
 import '@dile/ui/components/menu-overlay/menu-overlay.js';
 

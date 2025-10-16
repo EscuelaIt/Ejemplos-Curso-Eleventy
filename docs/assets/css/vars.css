@@ -1,0 +1,5 @@
+html {
+  --dile-menu-overlay-color: yellow;
+  --dile-menu-overlay-background-color: #666;
+  --dile-menu-overlay-padding: 1rem;
+}
