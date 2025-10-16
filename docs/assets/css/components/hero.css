@@ -1,9 +1,13 @@
 .hero {
-  background: orange;
+  background: #336;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
   margin-bottom: 1rem;
+}
+
+.hero h1 {
+  color: #fff;
 }
