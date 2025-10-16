@@ -1,4 +1,4 @@
-@import './reset.css';
+@import "tailwindcss";
 @import './vars.css';
 @import './layout.css';
 @import './components/featured.css';

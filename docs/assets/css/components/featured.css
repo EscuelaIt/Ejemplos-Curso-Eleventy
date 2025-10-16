@@ -15,7 +15,6 @@
   font-size: 1.1rem;
   font-weight: 500;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
 }

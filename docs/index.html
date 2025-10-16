@@ -3,6 +3,11 @@ layout: layout.html
 eleventyExcludeFromCollections: true
 ---
 
+
+<h1 class="bg-sky-100 p-8">
+    Hello world!
+</h1>
+
 <div class="hero">
   <h1>Blog de Miguel</h1>
 </div>
@@ -12,16 +17,16 @@ eleventyExcludeFromCollections: true
 </p>
 
 <section class="featured">
-  <div class="card">
+  <div class="card shadow-md">
     Una herramienta sencilla
   </div>
-  <div class="card">
+  <div class="card shadow-md">
     Avanzada, o simple, según tu nivel
   </div>
-  <div class="card">
+  <div class="card shadow-md">
     <img src="/assets/images/sync.svg"> Segura
   </div>
-  <div class="card">
+  <div class="card shadow-md">
     Con una gran comunidad
   </div>
 </section>
@@ -32,8 +37,8 @@ eleventyExcludeFromCollections: true
 <h2>Novedades del sitio</h2>
 {% assign articulosOrdenados = collections.all | reverse %}
 {% for articulo in articulosOrdenados limit: 4 %}
-  <article class="novedad">
-    <h3><a href="{{ articulo.url }}">{{ articulo.data.title }}</a></h3>
+  <article class="novedad shadow-md shadow-cyan-500/50">
+    <h3 class="font-bold"><a href="{{ articulo.url }}" class="text-cyan-600">{{ articulo.data.title }}</a></h3>
     <p>{{ articulo.data.description | default: "Sin descripción"}}</p>
   </article>
 {% endfor %}
