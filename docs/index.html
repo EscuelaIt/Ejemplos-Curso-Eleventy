@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 
 
 <h1 class="bg-sky-100 p-8">
-    Hello world!
+    Hello world by {{ faqs.empresa }}!
 </h1>
 
 <div class="hero">
@@ -55,3 +55,11 @@ eleventyExcludeFromCollections: true
   </div>
 </dile-menu-overlay>
 
+<h2 class="mt-8">FAQs</h2>
+
+<dl>
+  {% for faq in faqs.elements %}
+    <dt class="font-bold">{{ faq.pregunta }}</dt>
+    <dd class="mb-3">{{ faq.respuesta }}</dd>
+  {% endfor %}
+</dl>

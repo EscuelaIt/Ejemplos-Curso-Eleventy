@@ -33,3 +33,11 @@ eleventyExcludeFromCollections: true
   {% endfor %}
 </ul>
 
+<h2 class="mt-8">FAQs</h2>
+
+<dl>
+  {% for faq in faqs.elements %}
+    <dt class="font-bold">{{ faq.pregunta }}</dt>
+    <dd class="mb-3">{{ faq.respuesta }}</dd>
+  {% endfor %}
+</dl>

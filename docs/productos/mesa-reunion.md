@@ -8,4 +8,4 @@ date: 2025-10-01
 
 # Mesa de reunión
 
-Esto es una mesa grande en la que caben muchos interlocutores.
+Esto es una mesa grande de {{ faqs.empresa }} en la que caben muchos interlocutores.

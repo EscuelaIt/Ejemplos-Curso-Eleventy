@@ -1,0 +1,17 @@
+{
+  "empresa": "Escuela.IT",
+  "elements": [
+    {
+      "pregunta": "Cuáles son los gastos de envío",
+      "respuesta": "Depende del volumen del paquete y el peso. En el carrito te aparecerá el valor."
+    },
+    {
+      "pregunta": "Cómo devuelvo un paquete",
+      "respuesta": "Necesitas mandar una solicitud de devolución para enviarte la etiqueta y nosotros solicitamos al transportista..."
+    },
+    {
+      "pregunta": "Podéis emitir facturas",
+      "respuesta": "Por supuesto, danos tus datos de facturación al hacer el pedido."
+    }
+  ]
+}
