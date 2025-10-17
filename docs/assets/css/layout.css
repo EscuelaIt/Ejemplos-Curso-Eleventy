@@ -34,6 +34,7 @@ main {
 ul {
   margin-left: 2rem;
   margin-bottom: 1.5rem;
+  list-style-type: disc;
 }
 
 h1, h2, h3 {
