@@ -63,3 +63,11 @@ eleventyExcludeFromCollections: true
     <dd class="mb-3">{{ faq.respuesta }}</dd>
   {% endfor %}
 </dl>
+
+<h2>Paises</h2>
+<p>{{ countries.message }}</p>
+<select name="paises">
+  {% for country in countries.data %}
+    <option value="{{country.id}}">{{country.name}}</option>
+  {% endfor %}
+</select>
