@@ -13,10 +13,7 @@ pagination:
 <h1>Mi blog</h1>
 
 {% for post in posts %}
-  <article class="novedad shadow-md">
-    <h3 class="font-bold"><a href="{{ post.url }}" class="text-cyan-600">{{ post.data.title }}</a></h3>
-    <p>{{ post.data.description | default: "Sin descripción"}}</p>
-  </article>
+  {% include "partials/post.html" %}
 {% endfor %}
 
 <nav class="border-1 border-sky-300 bg-sky-100 p-4 mt-4">

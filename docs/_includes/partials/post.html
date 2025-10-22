@@ -1,0 +1,4 @@
+<article class="novedad shadow-md {{ boxClass | default: "bg-sky-100" }}">
+  <h3 class="font-bold"><a href="{{ post.url }}" class="text-cyan-600">{{ post.data.title }}</a></h3>
+  <p class="italic">{{ post.data.description | default: "Sin descripción"}}</p>
+</article>
