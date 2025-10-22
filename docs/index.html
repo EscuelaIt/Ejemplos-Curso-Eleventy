@@ -71,3 +71,12 @@ eleventyExcludeFromCollections: true
     <option value="{{country.id}}">{{country.name}}</option>
   {% endfor %}
 </select>
+
+<h2 class="mt-8">Blog en 2024</h2>
+{% for post in collections.blogPost2024 %}
+  <article class="mt-4">
+    <h3>{{post.data.title}} ({{ post.date | fecha_es}})</h3>
+    <p>{{post.data.description}}</p>
+    <a href="{{post.url}}">Entrar</a>
+  </article>
+{% endfor %}

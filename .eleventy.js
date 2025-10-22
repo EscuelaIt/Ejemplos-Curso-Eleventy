@@ -13,6 +13,23 @@ export default function (eleventyConfig) {
             ],
         }
     });
+
+    // generar una colección al vuelo
+    eleventyConfig.addCollection('blogPost2024', function(collectionApi) {
+        const posts = collectionApi.getFilteredByTag('blog');
+        return posts.filter( post => {
+            const year = post.date.getFullYear();
+            return year == 2024;
+        });
+    });
+
+    eleventyConfig.addFilter('fecha_es', function(date) {
+        return date.toLocaleDateString("es-ES", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
+        });
+    });
     
     return {
         dir: {
