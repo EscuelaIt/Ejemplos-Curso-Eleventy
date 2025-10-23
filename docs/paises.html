@@ -9,7 +9,7 @@ pagination:
 <h1>Paises</h1>
 
 {% for country in pagination.items %}
-    <p>{{country.id}}: {{country.name}}</p>
+    <p>{{country.id}}: <a href="/paises/{{country.slug}}/">{{country.name}}</a></p>
 {% endfor %}
 
 <nav class="border-1 border-sky-300 bg-sky-100 p-4 mt-4">

@@ -1,0 +1,14 @@
+---
+layout: layout.html
+pagination:
+  data: countries.data
+  size: 1
+  alias: country
+permalink: "paises/{{ country.slug }}/"
+---
+
+<h1>{{ country.name }}</h1>
+<div>{{ country.id }}</div>
+<div>{{ country.continent }}</div>
+
+<p class="mt-8"><a href="..">Volver</a>
